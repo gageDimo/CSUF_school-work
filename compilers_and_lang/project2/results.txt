@@ -1,0 +1,30 @@
+Test 2 Token: Identifier		Lexeme: var
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Identifier		Lexeme: b
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Operator		Lexeme: *
+Test 6 Token: Operator		Lexeme: *
+<Empty> -> Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: d
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Identifier		Lexeme: e
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Operator		Lexeme: +
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty> 
+Test 4 Token: Identifier		Lexeme: f
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty> 
+Test 4 Token: Identifier		Lexeme: g
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon

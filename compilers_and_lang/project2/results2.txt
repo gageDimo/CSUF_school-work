@@ -1,0 +1,28 @@
+Test 1 Token: Keyword		Lexeme: function
+Test 2 Token: Identifier		Lexeme: convert1x
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Separator		Lexeme: (
+Test 3 Token: Identifier		Lexeme: fahrint
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: )
+<Expression Prime> -> Epsilon
+Test 1 Token: Keyword		Lexeme: return
+Test 1 Token: String		Lexeme: 5
+Test 2 Token: Operator		Lexeme: *
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Separator		Lexeme: (
+Test 3 Token: Identifier		Lexeme: fahr
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Operator		Lexeme: -
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty> 
+Test 4 Token: Integer		Lexeme: 32
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+<Expression Prime> -> Epsilon
+Test 3 Token: Separator		Lexeme: }
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: }

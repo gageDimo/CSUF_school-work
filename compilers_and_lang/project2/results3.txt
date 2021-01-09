@@ -1,0 +1,167 @@
+Test 1 Token: Keyword		Lexeme: int
+Test 2 Token: Identifier		Lexeme: i
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Integer		Lexeme: 5
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 1 Token: Keyword		Lexeme: while
+Test 1 Token: Identifier		Lexeme: 
+Test 3 Token: Separator		Lexeme: (
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Identifier		Lexeme: i
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: i
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Identifier		Lexeme: i
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Operator		Lexeme: +
+<ExpressionPrime> -> + <Term> <ExpressionPrime> | - <Term> <ExpressionPrime> | <Empty> 
+Test 4 Token: Integer		Lexeme: 5
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: i
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: -
+Test 3 Token: Integer		Lexeme: 2
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 3 Token: Separator		Lexeme: }
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Identifier		Lexeme: a
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: b
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Identifier		Lexeme: c
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Operator		Lexeme: /
+Test 6 Token: Operator		Lexeme: /
+<Empty> -> Epsilon
+<TermPrime> -> * <Factor> <TermPrime> | / <Factor> <TermPrime> | <Empty>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: a
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: -
+Test 3 Token: Identifier		Lexeme: a
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: b
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: *
+Test 3 Token: Identifier		Lexeme: b
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Operator		Lexeme: =
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: b
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Integer		Lexeme: 8
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: a
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: =
+Test 3 Token: Integer		Lexeme: 9
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: a
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: +
+Test 3 Token: Integer		Lexeme: 2
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: c
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: -
+Test 3 Token: Integer		Lexeme: 3
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: ;
+Test 6 Token: Separator		Lexeme: ;
+<Term Prime> -> Epsilon
+<Expression Prime> -> Epsilon
+Test 1 Token: Keyword		Lexeme: if
+Test 1 Token: String		Lexeme: 
+Test 3 Token: Separator		Lexeme: (
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Identifier		Lexeme: a
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: a
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: +
+Test 3 Token: Operator		Lexeme: =
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Identifier		Lexeme: a
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: b
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: +
+Test 3 Token: Operator		Lexeme: =
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Identifier		Lexeme: b
+<Expression Prime> -> Epsilon
+Test 2 Token: Identifier		Lexeme: c
+<Statement> -> <Assign>
+<Assign> -> <Identifier> = <Expression>
+Test 8 Token: Operator		Lexeme: +
+Test 3 Token: Operator		Lexeme: =
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Identifier		Lexeme: c
+<Expression Prime> -> Epsilon
+Test 1 Token: Keyword		Lexeme: return
+Test 1 Token: Identifier		Lexeme: 
+Test 3 Token: Separator		Lexeme: ;
+<Expression> -> <Term> <Expression Prime>
+<Term> -> <Factor> <Term Prime> <Factor> -> <Identifier>
+Test 3 Token: Separator		Lexeme: }
+<Expression Prime> -> Epsilon
