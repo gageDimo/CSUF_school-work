@@ -1,0 +1,104 @@
+// URL for this code:
+// https://editor.p5js.org/ushakamath1302/sketches/awCa_1aAu
+
+// download and instructions page for p5.play.js:
+// https://github.com/molleindustria/p5.play/wiki/Get-Started
+
+var background;
+var bgimg;
+
+var bow;
+//bow animation
+var bowani;
+
+var blueballoon;
+//blueballoon animation
+var bbani
+
+var redballoon;
+var rbani;
+
+var greenballoon; 
+var gbani;
+
+var pinkballoon;
+var pbani;
+
+var arrow;
+var arani
+
+  function preload(){
+   bgimg=loadImage("background0.png");
+
+   bowani=loadImage("bow0.png");
+
+   bbani=loadImage("blue_balloon0.png");
+
+   rbani=loadImage("red_balloon0.png");
+
+   gbani=loadImage("green_balloon0.png");
+
+   pbani=loadImage("pink_balloon0.png");
+
+   arani=loadImage("arrow0.png");
+  }
+
+  function setup() {
+    createCanvas(600, 600);
+    
+      background=createSprite(0,0,600,600);
+      background.addImage("background",bgimg);
+      background.scale=3;
+      background.x= background.width/2;
+      background.velocityX=-5;
+
+      bow=createSprite(550,100,40,60);
+      bow.addImage("bow",bowani);
+      bow.scale=0.9;
+
+      for (var i = 50; i < 400; i=i+65){    
+      blueballoon=createSprite(20,i,0,0);
+      blueballoon.addImage("balloonBlue",bbani);
+      blueballoon.scale=0.1;
+      }
+
+       for (var v = 70; v < 400; v=v+80){    
+      redballoon=createSprite(80,v,0,0);
+      redballoon.addImage("balloonRed",rbani);
+      redballoon.scale=0.1;
+      }
+
+       for (var b = 90; b < 400; b=b+95){    
+      greenballoon=createSprite(140,b,0,0);
+      greenballoon.addImage("balloonGreen",gbani);
+      greenballoon.scale=0.1;
+      }
+
+      for (var d = 110; d < 400; d=d+110){    
+      pinkballoon=createSprite(200,d,0,0);
+      pinkballoon.addImage("balloonPink",pbani);
+      pinkballoon.scale=1.3;
+      }
+
+      arrow=createSprite(560,100,20,0);
+      arrow.addImage("Arrow",arani);
+      arrow.scale=0.5;
+
+      edges=createEdgeSprites;
+    }
+
+  function draw() {
+   //make the background infinite
+    if(background.x<0){
+      background.x=background.width/2;
+    }
+
+    bow.y= mouseY;
+
+    arrow.y= bow.y;
+
+
+
+    drawSprites();
+   }
+
