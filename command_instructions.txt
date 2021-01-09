@@ -1,0 +1,35 @@
+to compile code in Atom,
+
+"cd" to change the menu to where the file is located
+"ls" to read the list of files/documents in the current menu
+
+once at the menu where program is located, type in terminal:
+
+g++ -o test example.cpp
+./test
+
+"test" = compile action name (can be changed; "a.out" if no name is written)
+"example.cpp" = the file that is run
+
+----------------------------------------------------------------------------------------
+to create a zip file:
+
+create name for zip folder
+then, specify file to pack in zip
+
+zip zipfilename.zip filename
+
+----------------------------------------------------------------------------------------
+
+git commands
+
+git clone <URL> - to obtain repository from github, make sure to be in correct directory
+
+in repository file,
+
+git add <filename1> <filename2> ... <filenameN> - to insert files from computer to
+github repository
+
+git commit -m "<insert message text>" - add update message when uploading
+
+git push - finalize adding files to repo
